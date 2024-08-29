@@ -1,0 +1,67 @@
+.premium-ad{
+    padding: 1.6rem 2.4rem;
+    box-shadow: 0 0.8rem 2.4rem rgba(0, 0, 0, 0.08);
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px); 
+
+    &-info{
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+
+        & .counter{
+            font-size: 1.4rem;
+            font-weight: 600;
+            line-height: 2.2rem;
+            color: var(--text-bold);
+        }
+
+        & .des{
+            font-size: 1.4rem;
+            line-height: 2.2rem;
+            color: var(--text-bold);
+        }
+    }
+
+    &-button{
+        margin-top: 1.6rem;
+        width: 100%;
+        height: 5.2rem;
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 1.8rem;
+        line-height: 3.2rem;
+        padding: 1rem 0;
+        border: none;
+        border-radius: 0.6rem;
+        background-color: var(--teal);
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    &-detail{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.8rem;
+
+        &:hover{
+            cursor: pointer;
+            opacity: 0.7;
+        }
+        
+        & p{
+            font-size: 1.4rem;
+            line-height: 2.4rem;
+            color: var(--cyan);
+        }
+
+        & svg{
+            path{
+                stroke: var(--cyan);
+            }
+        }
+    }
+}

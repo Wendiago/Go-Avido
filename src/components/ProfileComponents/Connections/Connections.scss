@@ -1,0 +1,100 @@
+.profilepage-connections__container{
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    padding-top: 3.2rem;
+}
+
+.profilepage-connections__statusbar{
+    display: flex;
+    justify-content: space-between;
+    height: 2rem;
+
+    &-search{
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+
+        & input.searchbox{
+            border: none;
+            color: var(--text-regular);
+            font-size: 1.2rem;
+            line-height: 2rem;
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+
+    &-status{
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+        line-height: 2rem;
+
+        & .recently-added{
+            color: var(--text-bold);
+            font-weight: 600;
+        }
+
+        & .all{
+            color: var(--text-regular);
+        }
+
+        & .separator-container{
+            height: 100%;
+            margin: 0 0.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            & .separator{
+                height: 70%;
+                border: 1px solid var(--text-regular);
+            }
+        }
+    }
+}
+
+.profilepage-connections__connections{
+    display: flex;
+    align-items: center;
+    gap: 7.2rem;
+    flex-wrap: wrap;
+
+    & .connection{
+        min-width: 14rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        line-height: 2rem;
+
+        &__avatar{
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            padding-bottom: 1.6rem;
+            & img{
+                height: 5.4rem;
+                aspect-ratio: 1;
+            }
+            
+        }
+
+        &__name{
+            font-weight: 600;
+            color: var(--text-bold);
+        }
+
+        &__position{
+            font-weight: 500;
+            color: var(--text-regular);
+        }
+
+        &__company{
+            color: var(--text-regular);
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.add-position-box{
+    box-shadow: 0 18px 24px rgba(0, 0, 0, 0.08);
+    padding: 2.4rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px); 
+    
+    &-des{
+        color: var(--text-regular);
+        line-height: 2rem;
+        line-height: 2rem;
+        font-size: 1.2rem;
+    }
+    & a{
+        display: flex;
+        align-items: center;
+
+        &:hover{
+            cursor: pointer;
+            opacity: 0.7;
+        }
+
+        & p{
+            color: var(--cyan);
+            line-height: 2rem;
+            font-size: 1.2rem;
+        }
+
+        & svg path{
+            stroke: var(--cyan);
+        }
+    }
+}

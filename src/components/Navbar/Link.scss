@@ -1,0 +1,15 @@
+.navlink{
+    color: var(--text-bold);
+    font-size: 1.6rem;
+    padding: 0.4rem 0;
+    text-decoration: none;
+}
+
+.navlink:hover{
+    color: var(--text-regular);
+    cursor: pointer;
+}
+
+.navlink.active{
+    border-bottom: solid 0.2rem var(--cyan);
+}

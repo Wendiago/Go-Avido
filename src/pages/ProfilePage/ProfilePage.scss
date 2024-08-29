@@ -1,0 +1,182 @@
+.profilepage-header__container{
+    position: relative;
+    width: 100%;
+    height: 20.4rem;
+    background-color: rgba(11, 170, 202, 0.4);
+    display: absolute;
+}
+.profilepage-header{
+    display: grid;
+    max-width: 133.6rem;
+    height: 100%;
+    margin: 0 auto;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 3.2rem;
+
+    &__avatar{
+        position: relative;
+        border: 4px solid var(--white);
+        border-radius: 50%;
+        grid-column: 2 / 4;
+        height: 19.6rem;
+        aspect-ratio: 1;
+        top: 5.2rem;
+        z-index: 1;
+    }
+
+    &__info-basicinfo{
+        position: relative;
+        top: 8.8rem;
+        max-height: 8rem;
+        grid-column: 4 / 7;
+        margin-left: -0.8rem;
+        &-name{
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            font-size: 1.8rem;
+            line-height: 3rem;
+            color: var(--text-bold);
+            font-weight: 700;
+        }
+
+        &-position{
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+            color: var(--text-bold);
+        }
+
+        &-place{
+            font-size: 1.4rem;
+            line-height: 2.2rem;
+            color: var(--text-bold);
+            font-weight: 600;
+        }
+    }
+
+    &__info-workinfo{
+        position: relative;
+        top: 8rem;
+        max-height: 9.4rem;
+        grid-column: 7 / 12;
+        display: flex;
+        align-items: center;
+        padding: 1.2rem 5.2rem;
+        background-color: var(--glass-white);
+        border-radius: 4px;
+        & div.title{
+            font-size: 1.6rem;
+            color: var(--text-bold);
+            font-weight: 600;
+            line-height: 2.6rem;
+        }
+
+        & div{
+            font-size: 1.4rem;
+            color: var(--text-medium);
+            line-height: 2.2rem;
+        }
+        
+        & .separator-container{
+            flex-grow: 1;
+            height: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            & .separator{
+                height: 50%;
+                border: 1px solid var(--text-regular);
+            }
+            
+        }
+    }
+}
+
+.profilepage-controllers-background{
+    width: 100%;
+    height: 5.6rem;
+    background-color: var(--glass-white);
+    border-bottom: 1px solid var(--separator-color);
+    .profilepage-controllers__container{
+        display: grid;
+        max-width: 133.6rem;
+        margin: 0 auto;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 3.2rem;
+        height: 100%;
+
+        .profilepage-controllers{
+            display: flex;
+            align-items: center;
+            gap: 1.6rem;
+            grid-column: 4 / 13;
+            margin-left: -0.8rem;
+
+            // & div{
+            //     position: relative;
+            //     display: flex;
+            //     align-items: center;
+            //     justify-content: center;
+            //     padding: 0.4rem 1rem;
+            //     background-color: var(--cyan);
+            //     color: var(--white);
+            //     font-size: 1.4rem;
+            //     line-height: 2.4rem;
+            //     border: 1px solid var(--cyan);
+            //     border-radius: 4px;
+
+            //     &:hover{
+            //         background-color: var(--glass-white);
+            //         color: var(--cyan);
+            //         border: 1px solid var(--cyan);
+            //         cursor: pointer;
+            //     }
+
+            //     &.active{
+            //         background-color: var(--glass-white);
+            //         color: var(--cyan);
+            //         border: 1px solid var(--cyan);
+            //     }
+            // }
+        }
+    }
+}
+
+.profilepage-content{
+    &__container{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 3.2rem;
+        max-width: 133.6rem;
+        margin: 0 auto;
+    }
+    
+    &__box{
+        grid-column: 2/12;
+        max-width: 110.6rem;
+        margin-top: 5.2rem;
+        padding: 2.4rem;
+        background-color: var(--white);
+    }
+
+    &__navlinks{
+        display: flex;
+        justify-content: space-between;
+        height: 3.6rem;
+        border-bottom: 1px solid var(--separator-color);
+
+        & .profilepage-navlink{
+            font-size: 2rem;
+            line-height: 2.8rem;
+            color: var(--text-bold);
+            font-weight: 500;
+            text-decoration: none;
+        
+            &.active{
+                border-bottom: 1px solid var(--cyan);
+            }
+        }
+        
+    }
+}

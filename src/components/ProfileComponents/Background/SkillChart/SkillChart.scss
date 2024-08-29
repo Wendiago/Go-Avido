@@ -1,0 +1,19 @@
+.skillchart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-regular);
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    & svg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        //border: 1px dashed var(--text-regular);
+        
+    }
+
+    & .skillchart__text{
+        fill: var(--text-regular);
+    }
+}

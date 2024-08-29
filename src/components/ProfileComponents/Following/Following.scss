@@ -1,0 +1,50 @@
+.profilepage-following__container{
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    padding: 3.2rem 0;
+}
+
+.profilepage-following__statusbar{
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: var(--text-regular);
+}
+
+.profilepage-following__followings{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    
+    & .following{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 1.6rem;
+        border-bottom: 1px solid var(--separator-color);
+
+        & .info{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.8rem;
+            height: 5.4rem;
+            font-size: 1.2rem;
+            line-height: 2rem;
+
+            & img{
+                height: 100%;
+                aspect-ratio: 1;
+            }
+
+            & .name{
+                color: var(--text-bold);
+                font-weight: 500;
+            }
+
+            & .position{
+                color: var(--text-regular);
+            }
+        }
+    }
+}

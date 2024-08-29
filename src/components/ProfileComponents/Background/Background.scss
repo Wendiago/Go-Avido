@@ -1,0 +1,217 @@
+.profilepage-background__container{
+    margin-top: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    
+    & .separator{
+        width: 1.6rem;
+        border-bottom: 1px solid var(--text-bold);
+    }
+
+    & .title{
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        color: var(--text-bold);
+        height: 2rem;
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 2rem;
+
+        & img{
+            height: 100%;
+            aspect-ratio: 1;
+        }
+    }
+
+    & .content{
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+        padding: 1rem 2.4rem 3.2rem;
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        color: var(--text-regular);
+        border-bottom: 1px solid var(--separator-color);
+    }
+
+    & .detail:last-child{
+        padding-bottom: 2.4rem;
+    }
+}
+
+.profilepage-background__experience{
+    & .detail{
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+
+        & .image{
+            display: flex;
+            align-items: center;
+            padding: 1.35rem 1.162rem;
+        }
+
+        & .group div{
+            font-size: 1.2rem;
+            line-height: 2rem;
+        }
+
+        & .position{
+            color: var(--text-bold);
+            font-weight: 600;
+        }
+
+        & .company{
+            color: var(--text-regular);
+            font-weight: 500;
+        }
+
+        & .time{
+            color: var(--text-regular);
+        }
+
+        & .separator{
+            padding-top: 1.6rem;
+        }
+    }
+}
+
+.profilepage-background__projects{
+    & .detail{
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        color: var(--text-regular);
+
+        & .detail__header{
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+            & .project-name{
+                font-size: 1.6rem;
+                line-height: 2.6rem;
+                color: var(--text-bold);
+                font-weight: 600;
+            }
+        }
+
+        & .detail__member-title{
+            font-size: 1.4rem;
+            line-height: 2.4rem;
+            color: var(--text-bold);
+            font-weight: 500;
+        }
+
+        & .detail__members{
+            height: 6rem;
+            display: flex;
+            align-items: center;
+            gap: 1.6rem;
+
+            & img{
+                height: 100%;
+                aspect-ratio: 1;
+            }
+        }
+    }
+}
+
+.profilepage-background__awards{
+    & .detail{
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+
+        & .detail__header{
+            font-size: 1.2rem;
+            line-height: 2rem;
+            &-field{
+                color: var(--text-bold);
+                font-weight: 600;
+            }
+            &-name{
+                color: var(--text-regular);
+                font-weight: 600;
+            }
+            &-time{
+                color: var(--text-regular);
+            }
+        }
+
+        & .detail__description{
+            font-size: 1.4rem;
+            line-height: 2.2rem;
+        }
+    }
+}
+
+.profilepage-background__skills{
+    & .skillchart__container{
+        display: flex;
+        align-items: center;
+        gap: 3.2rem;
+    }
+
+    & .skillchart__otherskills{
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+
+        &-title{
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+            font-weight: 600;
+            color: var(--text-bold);
+        }
+
+        &-detail{
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            flex-wrap: wrap;
+
+            & .skillbox{
+                font-size: 1.2rem;
+                line-height: 2rem;
+                color: var(--white);
+                font-weight: 500;
+                padding: 0.2rem 1rem;
+                background-color: var(--skillbox-color);
+                border-radius: 4px;
+            }
+        }
+    }
+}
+
+.profilepage-background__education{
+    & .detail{
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+
+        & .detail__header{
+            font-size: 1.2rem;
+            line-height: 2rem;
+            &-name{
+                color: var(--text-bold);
+                font-weight: 600;
+            }
+            &-field{
+                color: var(--text-regular);
+                font-weight: 600;
+            }
+            &-time{
+                color: var(--text-regular);
+            }
+        }
+
+        & .detail__description{
+            font-size: 1.4rem;
+            line-height: 2.2rem;
+        }
+    }
+}

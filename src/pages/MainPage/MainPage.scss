@@ -1,0 +1,22 @@
+.main-container{
+    padding-top: 5.2rem;
+    max-width: 133.6rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 3.2rem;
+    margin: 0 auto;
+    min-height: 100vh;
+
+    .main-section{
+        grid-column: 2 / 8;
+        display: flex;
+        flex-direction: column;
+        gap: 3.2rem;
+    }
+    .secondary-section{
+        grid-column: 8 / 12;
+        display: flex;
+        flex-direction: column;
+        gap: 3.2rem;
+    }
+}

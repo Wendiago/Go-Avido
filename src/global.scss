@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+    --white: #FFFFFF;
+    --black: #121212;
+    --cyan: #0BAACA;
+    --teal: #1C836D;
+    --yellow-600: #D6A206;
+    --orange: #D56A11;
+    --text-bold: #121212;
+    --text-regular: #807E7E;
+    --text-medium: #605F5F;
+    --separator-color: #EAEAEA;
+    --post-text-color: #3E3E59;
+    --glass-white: rgba(255, 255, 255, 0.4);
+    --skillbox-color: #A7A7A7;
+    --font-family: "Figtree", "Inter", sans-serif;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+html{
+    min-height: 100vh;
+    font-size: 10px;
+    background-image: url('https://th.bing.com/th/id/R.21228762a3d9e9ed62dd633b465a7ee6?rik=Mds6%2b9gvLyTTLA&pid=ImgRaw&r=0');
+    background-size: cover; /* Ensures the image covers the whole background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background image fixed in place */
+}
+
+main{
+    //width: 100vw;
+}
+
+.modal-container{
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden; 
+    opacity: 0; 
+    transition: visibility 0s, opacity 0.5s ease;
+    z-index: 2000;
+}
+
+.modal-container.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+

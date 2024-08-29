@@ -1,0 +1,214 @@
+.postboxmodal__container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    padding: 3.2rem;
+    width: 65.2rem;
+    min-height: 50rem;
+    background-color: var(--white);
+}
+
+.postboxmodal__header{
+    display: flex;
+    flex-direction: column;
+
+    &-avatar-infogroup-closebutton{
+        display: flex;
+        justify-content: space-between;
+        height: 6.8rem;
+    }
+
+    &-avatar-infogroup{
+        display: flex;
+        gap: 1.6rem;
+        align-items: center;
+    }
+
+    &-avatar{
+        height: 100%;
+        aspect-ratio: 1;
+    }
+
+    &-infogroup{
+        &-name{
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+            color: var(--text-bold);
+            font-weight: 600;
+        }
+
+        &-visibility{
+            font-size: 1.4rem;
+            line-height: 2.2rem;
+            color: var(--text-medium);
+        }
+    }
+
+    &-closebutton{
+        & svg{
+            width: 4rem;
+            height: 4rem;
+        }
+        & path{
+            fill: var(--text-bold)
+        }
+
+        &:hover{
+            cursor: pointer;
+            opacity: 0.7;
+        }
+    }
+
+    &-des{
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        color: var(--text-bold);
+        border: none;
+        resize: none;
+        flex-grow: 1;
+        max-height: 31.4rem;
+
+        &::placeholder{
+            color: var(--text-bold); 
+        }
+
+        &:focus {
+            border: none;
+            outline: none;
+        }
+    }
+}
+
+.postboxmodal__functions{
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+
+    & svg{
+        width: 2.8rem;
+        height: 2.8rem;
+
+        &:hover{
+            cursor: pointer;
+            opacity: 0.7;
+        }
+    }
+}
+
+.postboxmodal__separator{
+    border: 1px solid var(--separator-color);
+}
+
+.postboxmodal__footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7.4rem;
+
+    &-visibility{
+        display: flex;
+        flex-direction: column;
+
+        &-button{
+            position: relative; //ancestor for visibility dropdown box
+            display: flex;
+            align-items: center;
+
+            font-size: 1.6rem;
+            line-height: 3.2rem;
+            color: var(--text-bold);
+
+            & .visibility{
+                font-weight: 600;
+            }
+
+            & svg{
+                width: 2rem;
+                height: 2rem;
+                & path{
+                    stroke: var(--text-bold);
+                }
+                &:hover{
+                    cursor: pointer;
+                    opacity: 0.7;
+                }
+            }
+        }
+
+        &-des{
+            font-size: 1.4rem;
+            line-height: 2.2rem;
+            color: var(--text-medium);
+        }
+    }
+
+    &-timer-postbutton{
+        display: flex;
+        align-items: center;
+        gap: 3.2rem;
+
+        .postboxmodal__footer-timer{
+            & svg{
+                width: 2.8rem;
+                height: 2.8rem;
+                
+                &:hover{
+                    cursor: pointer;
+                    opacity: 0.7;
+                }
+            }
+            & path{
+                fill: var(--text-bold);
+            }
+        }
+
+        .postboxmodal__footer-postbutton{
+            padding: 1.9rem 4.4rem;
+            line-height: 3.4rem;
+            font-size: 2.2rem;
+            color: var(--white);
+            background-color: var(--cyan);
+            border-radius: 39px;
+
+            &:hover{
+                cursor: pointer;
+                opacity: 0.7;
+            }
+        }
+    }
+}
+
+.visibility-dropdown{
+    position: absolute;
+    top: 3.2rem;
+    left: 40%;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    
+    &.show{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    &-option{
+        font-size: 1.6rem;
+        line-height: 3.2rem;
+        color: var(--white);
+        font-weight: 600;
+        background-color: var(--text-bold);    
+        padding: 0 1rem;
+
+        &:hover {
+            background-color: var(--text-medium);
+            cursor: pointer;
+        }
+
+        &:last-child{
+            border-bottom-left-radius: 0.8rem;
+            border-bottom-right-radius: 0.8rem;
+        }
+    }
+}
