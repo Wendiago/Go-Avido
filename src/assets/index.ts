@@ -11,3 +11,7 @@ export { default as Awards } from "./awards.png";
 export { default as Skills } from "./skills.png";
 export { default as Educations } from "./education.png";
 export { default as ExperienceImage } from "./experience_image.png";
+export { default as Location } from "./location.png";
+export { default as Video } from "./youtube.png";
+export { default as Calendar } from "./calendar.png";
+export { default as PlaceholderImage } from "./PlaceholderImage.png";

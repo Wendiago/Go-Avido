@@ -4,8 +4,7 @@
     gap: 1.6rem;
     box-shadow: 0 18px 24px rgba(0, 0, 0, 0.08);
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px); 
+    background-color: var(--white);
 
     .upcomingeventbox__header{
         padding: 0.8rem 2.4rem;

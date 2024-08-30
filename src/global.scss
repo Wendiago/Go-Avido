@@ -5,9 +5,13 @@
     --white: #FFFFFF;
     --black: #121212;
     --cyan: #0BAACA;
+    --cyan-400: rgba(11, 170, 202, 40%);
     --teal: #1C836D;
+    --teal-400: rgba(28, 131, 109, 40%);
     --yellow-600: #D6A206;
+    --yellow-400: rgba(214, 162, 6, 40%);
     --orange: #D56A11;
+    --orange-400: rgba(213, 106, 17, 40%);
     --text-bold: #121212;
     --text-regular: #807E7E;
     --text-medium: #605F5F;
@@ -37,7 +41,7 @@ html{
 }
 
 main{
-    //width: 100vw;
+    display: relative; //to position some <Outlet/> content
 }
 
 .modal-container{

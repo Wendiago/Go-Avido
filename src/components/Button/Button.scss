@@ -27,6 +27,12 @@
         color: var(--white);
         border: none;
     }
+
+    &--teal-filled{
+        background-color: var(--teal);
+        color: var(--white);
+        border: none;
+    }
   
     &--small {
         padding: 0.4rem 1rem;
@@ -35,15 +41,15 @@
     }
   
     &--medium {
-        padding: 0.4rem 1rem;
-        font-size: 1.4rem;
-        line-height: 2.4rem;
+        padding: 1rem 0;
+        font-size: 1.8rem;
+        line-height: 3.2rem;
     }
   
     &--large {
-        padding: 0.4rem 1rem;
-        font-size: 1.4rem;
-        line-height: 2.4rem;
+        padding: 1.9rem 0;
+        font-size: 2.2rem;
+        line-height: 3.4rem;
     }
   
     &--disabled {

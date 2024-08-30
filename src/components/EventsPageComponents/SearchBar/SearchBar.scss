@@ -1,0 +1,68 @@
+.eventspage__searchbar{
+    grid-column: 2 / 12;
+    margin-top: 5.2rem;
+    padding: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    background-color: var(--white);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+
+    &-searchbox{
+        display: flex;
+        gap: 0.8rem;
+        align-items: center;
+        
+        // & svg{
+        //     width: 2.8rem;
+        //     height: 2.8rem;
+        //     & path{
+        //         fill: var(--text-bold);
+        //     }
+        // }
+
+        & input{
+            flex-grow: 1;
+            border: none;
+            font-size: 1.4rem;
+            line-height: 2.4rem;
+            color: var(--text-regular);
+
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+
+    & .separator{
+        border-bottom: 1px solid var(--separator-color);
+        width: 100%;
+    }
+
+    &-filters{
+        display: flex;
+        justify-content: space-between;
+        height: 3.2rem;
+
+        & [class$="-filter"]{
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+
+            & img{
+                height: 100%;
+                aspect-ratio: 1;
+            }
+
+            & p{
+                font-size: 1.4rem;
+                line-height: 2.4rem;
+                color: var(--text-medium);
+            }
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}

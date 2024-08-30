@@ -1,34 +1,34 @@
 import "./UpcomingEventBox.scss";
 
-interface EventInfo {
+export interface EventInfo {
   day: string;
   month: string;
   name: string;
   place: string;
 }
 
-const dummyData: EventInfo[] = [
-  {
-    day: "03",
-    month: "Dec",
-    name: "Design Thinking",
-    place: "@ Creative Town Hall",
-  },
-  {
-    day: "03",
-    month: "Dec",
-    name: "Design Thinking",
-    place: "@ Creative Town Hall",
-  },
-  {
-    day: "03",
-    month: "Dec",
-    name: "Design Thinking",
-    place: "@ Creative Town Hall",
-  },
-];
-
 export const UpcomingEventBox = () => {
+  const dummyData: EventInfo[] = [
+    {
+      day: "03",
+      month: "Dec",
+      name: "Design Thinking",
+      place: "@ Creative Town Hall",
+    },
+    {
+      day: "03",
+      month: "Dec",
+      name: "Design Thinking",
+      place: "@ Creative Town Hall",
+    },
+    {
+      day: "03",
+      month: "Dec",
+      name: "Design Thinking",
+      place: "@ Creative Town Hall",
+    },
+  ];
+
   return (
     <div className="upcomingeventbox-container">
       <div className="upcomingeventbox__header">Upcoming events</div>
