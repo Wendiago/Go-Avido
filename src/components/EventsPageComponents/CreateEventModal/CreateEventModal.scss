@@ -1,0 +1,123 @@
+.createEventModal__container{
+    width: 110.6rem;
+    max-width: 110.6rem;
+    background-color: var(--white);
+    padding: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    max-height: 90vh;
+    overflow-y: auto;
+    //box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.createEventModal{
+    &__uploadimg{
+        position: relative;
+        & img{
+            width: 100%;
+            object-fit: cover;
+        }
+        & .upload-button{
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            width: 5.4rem;
+            height: 5.4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: var(--cyan);
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__header{
+        font-size: 3.4rem;
+        line-height: 3.8rem;
+        font-weight: 500;
+    }
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+        gap: 3.2rem;
+
+        & [class^="form-"]{
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+
+            & p{
+                font-weight: 500;
+                color: var(--post-text-color);
+            }
+
+            & input{
+                padding: 1.3rem 1.6rem;
+                border-radius: 6px;
+                border: 1px solid #CECECE;
+                font-size: 1.6rem;
+                line-height: 2.6rem;
+
+                &::placeholder{
+                    color: #A7A7A7;
+                    font-weight: 300;
+                }
+
+                &:focus{
+                    outline-color: var(--cyan);
+                }
+            }
+        }
+
+        & [class^="group-"]{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 3.2rem;
+        }
+
+        & .form-category, .form-type{
+            & .dropdown-wrapper{
+                & .dropdown-select{
+                    padding: 1.3rem 1.6rem;
+                    width: 100%;
+                    font-size: 1.6rem;
+                    line-height: 2.6rem;
+                    
+                    border-radius: 6px;
+                    border: 1px solid #CECECE;
+
+                    &:focus{
+                        outline-color: var(--cyan);
+                    }
+
+                    & option[value=""]{
+                        color: #A7A7A7;
+                    }
+                }
+                & .dropdown-icon{
+                    
+                }
+            }
+        }
+    }
+
+    &__buttons{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        & .createEventModal__buttons-cancel,
+        .createEventModal__buttons-create{
+            padding: 1.9rem 4.4rem;
+        }
+    }
+}
+

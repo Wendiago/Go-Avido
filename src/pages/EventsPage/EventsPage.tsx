@@ -1,16 +1,21 @@
 import "./EventsPage.scss";
+import { useState } from "react";
 import { UpcomingEventBox } from "../../components/HomePageComponents/UpcomingEventBox/UpcomingEventBox";
 import { SearchBar } from "../../components/EventsPageComponents/SearchBar/SearchBar";
 import { GeneralBox } from "../../components/EventsPageComponents/GeneralBox/GeneralBox";
 import { Event } from "../../components/EventsPageComponents/Event/Event";
 import { Button } from "../../components/Button/Button";
 import { PlaceholderImage } from "../../assets";
+import { CreateEventModal } from "../../components/EventsPageComponents/CreateEventModal/CreateEventModal";
 import {
   EventAvailability,
   EventDetailProps,
 } from "../../@types/EventsPageTypes";
 
 export const EventsPage = () => {
+  const [isCreateEventModalOpen, setCreateEventModalOpen] =
+    useState<boolean>(false);
+
   const eventDetailData: EventDetailProps[] = [
     {
       eventImage: PlaceholderImage,
@@ -60,6 +65,13 @@ export const EventsPage = () => {
 
   return (
     <div className="eventspage">
+      {isCreateEventModalOpen && (
+        <CreateEventModal
+          isOpen={isCreateEventModalOpen}
+          closeModal={() => setCreateEventModalOpen(false)}
+        />
+      )}
+
       <div className="eventspage__backgroundbanner"></div>
       <div className="eventspage__container">
         <SearchBar />
@@ -69,6 +81,9 @@ export const EventsPage = () => {
             size="large"
             className="create-event-button"
             borderRadius="8px"
+            onClick={() => {
+              setCreateEventModalOpen(true);
+            }}
           >
             + Create Event
           </Button>

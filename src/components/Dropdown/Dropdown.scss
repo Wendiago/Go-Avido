@@ -1,0 +1,13 @@
+.dropdown-wrapper{
+    position: relative;
+    & .dropdown-select{
+        //Hide the dropdown arrow
+        appearance: none;
+        //Use arrow image as an dropdown arrow
+        background-image: url("../../assets/chevron-down.svg"); 
+        background-repeat: no-repeat;
+        background-position: right 1.4rem center; 
+        background-size: 2.4rem;
+        cursor: pointer;
+    }
+}

@@ -41,9 +41,11 @@ export const PostBoxModal = ({ isOpen, closeModal }: PostBoxModalProp) => {
   useEffect(() => {
     if (isOpen || isVisibilityDropdownOpen) {
       document.addEventListener("mousedown", handleOutsideClick);
+      document.querySelector("body")?.classList.add("no-scroll");
     }
     return () => {
       document.removeEventListener("mousedown", handleOutsideClick);
+      document.querySelector("body")?.classList.remove("no-scroll");
     };
   }, [isOpen, isVisibilityDropdownOpen]);
 
