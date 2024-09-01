@@ -6,7 +6,7 @@ import Avatar from "../../assets/Avatar.png";
 import { Navlink } from "./Link";
 import { Navigation, NavigationLink } from "../../@types/navTypes";
 import "./Navbar.scss";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 export const Navbar = () => {
@@ -14,6 +14,10 @@ export const Navbar = () => {
   const navigate = useNavigate();
   // Handle maximum display of 99+
   const displayCounter = notificationCounter > 99 ? "99+" : notificationCounter;
+
+  useEffect(() => {
+    setNotificationCounter(3);
+  });
   return (
     <nav>
       <div className="nav">
