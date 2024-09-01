@@ -20,3 +20,12 @@
         gap: 3.2rem;
     }
 }
+
+@media screen and (min-width: $phone) and (max-width: $desktop){
+    .main-container{
+        max-width: 39rem;
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 1.6rem 1.6rem 0;   
+    }
+}

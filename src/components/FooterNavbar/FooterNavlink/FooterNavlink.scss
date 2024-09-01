@@ -1,0 +1,40 @@
+.footerNavlink{
+    text-decoration: none;
+    & div{
+        height: 100%;
+        color: var(--white);
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        font-weight: 300;
+
+        & svg{
+            width: 2.4rem;
+            height: 2.4rem;
+            fill: var(--white);
+        }
+    
+        & img{
+            height: 2.4rem;
+            aspect-ratio: 1;
+        }
+    }  
+}
+
+.footerNavlink.active{
+    & div{
+        color: var(--black);
+        font-weight: 600;
+        & svg{
+            fill: var(--black);
+            & path{
+                fill: var(--black);
+            }
+        }
+    }  
+}

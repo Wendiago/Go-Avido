@@ -153,6 +153,7 @@
     & .skillchart__container{
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         gap: 3.2rem;
     }
 

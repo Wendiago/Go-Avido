@@ -1,8 +1,9 @@
 import "./Post.scss";
 import { Message, Forword, PostImage, Avatar } from "../../../assets/index";
 import { useState, useEffect, useRef } from "react";
+import { PostDetailProps } from "../../../@types/HomePageTypes";
 
-export const Post = () => {
+export const Post = ({ postDetail }: { postDetail: PostDetailProps }) => {
   const [isOverflow, setOverflow] = useState<boolean>(false);
   const [isExpanded, setExpanded] = useState<boolean>(false);
   const [isLiked, setLiked] = useState<boolean>(false);
@@ -20,13 +21,15 @@ export const Post = () => {
   return (
     <div className="post">
       <div className="post-header">
-        <img src={Avatar} alt="" className="post-header-avatar" />
+        <img
+          src={postDetail.personAvatar}
+          alt=""
+          className="post-header-avatar"
+        />
         <div className="post-header-personalInfo">
-          <p className="post-header-name">Vishnu Kumar Agrawal</p>
-          <p className="post-header-position">
-            Ux Designer at Divim Technology
-          </p>
-          <p className="post-header-date">25 Nov at 12:24 PM</p>
+          <p className="post-header-name">{postDetail.personName}</p>
+          <p className="post-header-position">{postDetail.personPosition}</p>
+          <p className="post-header-date">{postDetail.postDateTime}</p>
         </div>
       </div>
       <div className="post-content">
@@ -34,27 +37,7 @@ export const Post = () => {
           className={`post-content-text ${isExpanded ? "show-full" : ""}`}
           ref={contentRef}
         >
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s. Lorem Ipsum is simply dummy text of the printing and
-          typesetting industry. Lorem Ipsum has been the industry's standard
-          dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of
-          the printing and typesetting industry. Lorem Ipsum has been the
-          industry's standard dummy text ever since the 1500s. Lorem Ipsum is
-          simply dummy text of the printing and typesetting industry. Lorem
-          Ipsum has been the industry's standard dummy text ever since the
-          1500s. Lorem Ipsum is simply dummy text of the printing and
-          typesetting industry. Lorem Ipsum has been the industry's standard
-          dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of
-          the printing and typesetting industry. Lorem Ipsum has been the
-          industry's standard dummy text ever since the 1500s. Lorem Ipsum is
-          simply dummy text of the printing and typesetting industry. Lorem
-          Ipsum has been the industry's standard dummy text ever since the
-          1500s. Lorem Ipsum is simply dummy text of the printing and
-          typesetting industry. Lorem Ipsum has been the industry's standard
-          dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of
-          the printing and typesetting industry. Lorem Ipsum has been the
-          industry's standard dummy text ever since the 1500s.
+          {postDetail.postText}
         </div>
         {isOverflow && !isExpanded && (
           <span className="read-more" onClick={() => setExpanded(true)}>
@@ -66,10 +49,11 @@ export const Post = () => {
             Read less
           </span>
         )}
-
-        <div className="post-content-media">
-          <img src={PostImage} alt="" />
-        </div>
+        {postDetail.postImage && (
+          <div className="post-content-media">
+            <img src={PostImage} alt="" />
+          </div>
+        )}
       </div>
       <div className="post-actions">
         <div className="post-actions-container-3">
@@ -94,15 +78,15 @@ export const Post = () => {
               />
             </svg>
 
-            <p className="counter">14</p>
+            <p className="counter">{postDetail.postLike}</p>
           </div>
           <div className="post-actions-comment">
             <img src={Message}></img>
-            <p className="counter">28</p>
+            <p className="counter">{postDetail.postComment}</p>
           </div>
           <div className="post-actions-share">
             <img src={Forword}></img>
-            <p className="counter">20</p>
+            <p className="counter">{postDetail.postShare}</p>
           </div>
         </div>
 

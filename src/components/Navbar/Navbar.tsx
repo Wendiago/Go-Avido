@@ -24,13 +24,15 @@ export const Navbar = () => {
           onClick={() => navigate("/")}
         />
         <div className="nav-panel">
-          {Object.entries(Navigation).map(([key, value]) => (
-            <Navlink
-              key={key}
-              page={value}
-              link={NavigationLink[key as keyof typeof NavigationLink]}
-            />
-          ))}
+          {Object.entries(Navigation)
+            .filter(([key]) => key !== "Profile")
+            .map(([key, value]) => (
+              <Navlink
+                key={key}
+                page={value}
+                link={NavigationLink[key as keyof typeof NavigationLink]}
+              />
+            ))}
         </div>
 
         <div className="nav-icon">

@@ -17,8 +17,6 @@ export const CreateEventModal = ({
   const [typeOfEvent, setTypeOfEvent] = useState<string>("");
   const [startDate, setStartDate] = useState<string>("");
   const [endDate, setEndDate] = useState<string>("");
-  const [startTime, setStartTime] = useState<string>("");
-  const [endTime, setEndTime] = useState<string>("");
   const modalRef = useRef<HTMLDivElement | null>(null);
 
   const handleOutsideClick = (event: MouseEvent) => {
@@ -135,7 +133,7 @@ export const CreateEventModal = ({
             <p>Type Of Event</p>
             <Dropdown
               options={["Tech", "Education", "Healthcare"]}
-              value={category}
+              value={typeOfEvent}
               onChange={handleTypeOfEventChange}
               placeholder="Select Type of Event from drop down"
             />

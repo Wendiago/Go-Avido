@@ -2,12 +2,14 @@ export enum NavigationLink {
   Home = "/",
   Network = "/network",
   Events = "/events",
+  Profile = "/profile",
 }
 
 export enum Navigation {
   Home = "Home",
   Network = "Network",
   Events = "Events",
+  Profile = "Profile",
 }
 
 export enum Visibility {

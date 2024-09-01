@@ -212,3 +212,31 @@
         }
     }
 }
+
+@media screen and (min-width: $phone) and (max-width: $desktop){
+    .postboxmodal__container{
+        gap: 3.2rem;
+        padding: 1.6rem;
+        width: 39rem;
+        height: auto;
+    }
+    
+    .postboxmodal__header{
+        &-closebutton{
+            & svg{
+                width: 2.4rem;
+                height: 2.4rem;
+            }
+        }
+    }
+    
+    .postboxmodal__footer{
+        &-timer-postbutton{
+            .postboxmodal__footer-postbutton{
+                padding: 1rem 2.6rem;
+                line-height: 3.2rem;
+                font-size: 1.8rem;    
+            }
+        }
+    }
+}

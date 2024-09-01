@@ -1,0 +1,21 @@
+.footerNavbar{
+  display: none;
+  @media (min-width: $phone) and (max-width: $desktop){
+    width: 100%;
+    height: 8.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cyan);
+    padding: 0 2rem;
+    position: sticky;
+    bottom: 0;
+  }
+}
+
+.footerNavbar.hidden{
+  @media (min-width: $phone) and (max-width: $desktop){
+    display: none;
+  }
+}
+

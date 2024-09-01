@@ -1,6 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
+$phone: 390px;
+$desktop: 1335px;
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media (max-width: 390px) { @content; }
+    } @else if $breakpoint == desktop {
+        @media (min-width: 1440px) { @content; }
+    }
+}
+
 :root{
     --white: #FFFFFF;
     --black: #121212;
@@ -34,10 +45,10 @@ html{
     min-height: 100vh;
     font-size: 10px;
     background-image: url('https://th.bing.com/th/id/R.21228762a3d9e9ed62dd633b465a7ee6?rik=Mds6%2b9gvLyTTLA&pid=ImgRaw&r=0');
-    background-size: cover; /* Ensures the image covers the whole background */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    background-attachment: fixed; /* Keeps the background image fixed in place */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
 }
 
 main{
@@ -68,6 +79,7 @@ main{
 .no-scroll {
     overflow: hidden;
 }
+
 
 
 
