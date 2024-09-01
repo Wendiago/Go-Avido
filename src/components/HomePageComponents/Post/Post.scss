@@ -108,7 +108,7 @@
             .post-actions-like{
                 .like-icon{
                     &:hover{
-                        animation: giggle 0.5s ease-in-out infinite alternate;
+                        transform: scale(1.25);
                         path{
                             fill: #20C997;
                         }
@@ -147,14 +147,4 @@
     }
 }
 
-@keyframes giggle {
-    25% {
-      transform: translate(1px, -1px);
-    }
-    50% {
-      transform: translate(1px, 1px);
-    }
-    75% {
-      transform: translate(-1px, 1px);
-    }
-  }
+

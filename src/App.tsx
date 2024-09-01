@@ -3,6 +3,7 @@ import { Layout } from "./layout/Layout";
 import { MainPage } from "./pages/MainPage/MainPage";
 import { ProfilePage } from "./pages/ProfilePage/ProfilePage";
 import { EventsPage } from "./pages/EventsPage/EventsPage";
+import { NetworkPage } from "./pages/NetworkPage/NetworkPage";
 import {
   Background,
   Connections,
@@ -26,6 +27,7 @@ function App() {
             <Route path="followers" element={<Followers />}></Route>
           </Route>
           <Route path="/events" element={<EventsPage />}></Route>
+          <Route path="/network" element={<NetworkPage />}></Route>
         </Route>
       </Routes>
     </BrowserRouter>

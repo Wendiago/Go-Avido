@@ -46,10 +46,14 @@ export const MainPage = () => {
       )}
       <div className="main-container">
         <div className="main-section">
-          <PostBox openModal={() => setPostBoxModelOpen(true)} />
-          {postData.map((data, index) => (
-            <Post postDetail={data} key={index} />
-          ))}
+          <div className="main-section__postbox">
+            <PostBox openModal={() => setPostBoxModelOpen(true)} />
+          </div>
+          <div className="main-section__post">
+            {postData.map((data, index) => (
+              <Post postDetail={data} key={index} />
+            ))}
+          </div>
         </div>
         <div className="secondary-section">
           <AddPositionNotiBox />

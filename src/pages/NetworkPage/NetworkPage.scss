@@ -1,0 +1,19 @@
+.networkPage__content{
+    background-color: var(--white);
+    width: 133.6rem;
+    height: 40rem;
+    margin: 5.2rem auto;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    padding: 2.4rem;
+}
+
+@media screen and (min-width: $phone) and (max-width: $desktop){
+    .networkPage__content{
+        width: 39rem;
+        margin: 2.4rem auto;
+    }
+}

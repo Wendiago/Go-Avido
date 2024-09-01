@@ -1,5 +1,5 @@
 import "./Post.scss";
-import { Message, Forword, PostImage, Avatar } from "../../../assets/index";
+import { Message, Forword, PostImage } from "../../../assets/index";
 import { useState, useEffect, useRef } from "react";
 import { PostDetailProps } from "../../../@types/HomePageTypes";
 
