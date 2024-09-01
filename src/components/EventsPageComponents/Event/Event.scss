@@ -115,3 +115,10 @@
         }
     }
 }
+
+@media screen and (min-width: $phone) and (max-width: $desktop){
+    .event{
+        max-width: 35.8rem;
+        width: 35.8rem;
+    }
+}

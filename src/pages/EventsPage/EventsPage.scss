@@ -16,6 +16,10 @@
     gap: 3.2rem;
     max-width: 133.6rem;
     margin: 0 auto;
+
+    & .eventspage__searchbar-container{
+        grid-column: 2/12;
+    }
     
     & .eventspage__content-sidebar{
         grid-column: 2/6;
@@ -38,3 +42,37 @@
     }
 }
 
+@media screen and (min-width: $phone) and (max-width: $desktop){
+    .eventspage__backgroundbanner{
+        height: 8.5rem;
+    }
+    
+    .eventspage__container{
+        display: flex;
+        flex-direction: column;
+        width: 39rem;
+        gap: 1.8rem;
+        
+        & .eventspage__content-sidebar{
+            padding: {
+                left: 1.6rem;
+                right: 1.6rem
+            };
+            display: flex;
+            flex-direction: column;
+            gap: 3.2rem;
+    
+            & .upcomingeventbox-container{
+                box-shadow: none;
+                border: 1px solid var(--separator-color);
+            }
+        }
+    
+        & .eventspage__content-events{
+            align-items: center; 
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 1.6rem;
+        }
+    }
+}

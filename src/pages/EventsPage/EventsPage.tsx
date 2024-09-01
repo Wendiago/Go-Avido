@@ -74,7 +74,10 @@ export const EventsPage = () => {
 
       <div className="eventspage__backgroundbanner"></div>
       <div className="eventspage__container">
-        <SearchBar />
+        <div className="eventspage__searchbar-container">
+          <SearchBar />
+        </div>
+
         <div className="eventspage__content-sidebar">
           <Button
             color="cyan-filled"

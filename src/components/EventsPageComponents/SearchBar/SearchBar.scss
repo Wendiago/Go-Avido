@@ -12,14 +12,6 @@
         display: flex;
         gap: 0.8rem;
         align-items: center;
-        
-        // & svg{
-        //     width: 2.8rem;
-        //     height: 2.8rem;
-        //     & path{
-        //         fill: var(--text-bold);
-        //     }
-        // }
 
         & input{
             flex-grow: 1;
@@ -62,6 +54,42 @@
 
             &:hover{
                 cursor: pointer;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $phone) and (max-width: $desktop){
+    .eventspage__searchbar-container{
+        width: 100%;
+        margin-top: 1.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & .eventspage__searchbar{
+            width: 35.8rem;
+            height: auto;
+            padding: 1.6rem;
+            gap: 2.4rem;
+            margin: 0;
+        
+            &-filters{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 4.6rem;
+        
+                & .location-filter, .event-filter, .date-filter{
+                    display: none;
+                }
+
+                & .filter-button.btn{
+                    font-size: 1.6rem;
+                    line-height: 2.8rem;
+                    height: 100%;
+                    flex: 1;
+                }
             }
         }
     }
