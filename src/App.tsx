@@ -3,7 +3,6 @@ import { Layout } from "./layout/Layout";
 import { MainPage } from "./pages/MainPage/MainPage";
 import { ProfilePage } from "./pages/ProfilePage/ProfilePage";
 import { EventsPage } from "./pages/EventsPage/EventsPage";
-import { NetworkPage } from "./pages/NetworkPage/NetworkPage";
 import { LoginPage } from "./pages/LoginPage/LoginPage";
 import {
   Background,
