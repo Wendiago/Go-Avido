@@ -1,7 +1,7 @@
 .createEventModal__container{
     width: 110.6rem;
     max-width: 110.6rem;
-    background-color: var(--white);
+    background-color: var(--md-sys-color-surface-container);
     padding: 3.2rem;
     display: flex;
     flex-direction: column;
@@ -28,7 +28,7 @@
             align-items: center;
             justify-content: center;
             border-radius: 50%;
-            background-color: var(--cyan);
+            background-color: var(--md-sys-color-primary-container);
 
             &:hover{
                 cursor: pointer;
@@ -40,6 +40,7 @@
         font-size: 3.4rem;
         line-height: 3.8rem;
         font-weight: 500;
+        color: var(--md-sys-color-on-background)
     }
 
     &__form{
@@ -56,23 +57,25 @@
 
             & p{
                 font-weight: 500;
-                color: var(--post-text-color);
+                color: var(--md-sys-color-on-background);
             }
 
             & input{
                 padding: 1.3rem 1.6rem;
                 border-radius: 6px;
-                border: 1px solid #CECECE;
+                border: 1px solid var(--md-sys-color-outline-variant);
                 font-size: 1.6rem;
                 line-height: 2.6rem;
+                color: var(--md-sys-color-on-surface-variant);
+                background-color: var(--md-sys-color-surface-variant);
 
                 &::placeholder{
-                    color: #A7A7A7;
+                    color: var(--md-sys-color-on-surface-variant);
                     font-weight: 300;
                 }
 
                 &:focus{
-                    outline-color: var(--cyan);
+                    outline-color: var(--md-sys-color-outline-variant);
                 }
             }
         }
@@ -86,20 +89,21 @@
         & .form-category, .form-type{
             & .dropdown-wrapper{
                 & .dropdown-select{
+                    background-color: var(--md-sys-color-surface-variant);
+                    color: var(--md-sys-color-on-surface-variant);
                     padding: 1.3rem 1.6rem;
                     width: 100%;
                     font-size: 1.6rem;
                     line-height: 2.6rem;
-                    
                     border-radius: 6px;
-                    border: 1px solid #CECECE;
+                    border: 1px solid var(--md-sys-color-outline-variant);
 
                     &:focus{
-                        outline-color: var(--cyan);
+                        outline-color: var(--md-sys-color-outline-variant);
                     }
 
                     & option[value=""]{
-                        color: #A7A7A7;
+                        color: var(--md-sys-color-on-surface-variant);
                     }
                 }
             }

@@ -1,8 +1,9 @@
 .footerNavlink{
     text-decoration: none;
+    color: var(--md-sys-color-on-primary);
     & div{
         height: 100%;
-        color: var(--white);
+        color: var(--md-sys-color-on-primary);
         display: flex;
         flex-direction: column;
         gap: 0.4rem;
@@ -16,24 +17,28 @@
         & svg{
             width: 2.4rem;
             height: 2.4rem;
-            fill: var(--white);
+            fill: var(--md-sys-color-on-primary);
         }
     
         & img{
             height: 2.4rem;
             aspect-ratio: 1;
         }
+
+        & p{
+            color: var(--md-sys-color-on-primary);
+        }
     }  
 }
 
 .footerNavlink.active{
     & div{
-        color: var(--black);
+        color: var(--md-sys-color-on-primary);
         font-weight: 600;
         & svg{
-            fill: var(--black);
+            fill: var(--md-sys-color-on-primary);
             & path{
-                fill: var(--black);
+                stroke: var(--md-sys-color-on-primary);
             }
         }
     }  

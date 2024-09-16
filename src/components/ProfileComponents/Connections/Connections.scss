@@ -15,14 +15,22 @@
         align-items: center;
         gap: 0.8rem;
 
+        & svg path{
+            fill: var(--md-sys-color-on-surface);
+        }
+
         & input.searchbox{
+            background-color: var(--md-sys-color-surface-container);
             border: none;
-            color: var(--text-regular);
+            color: var(--md-sys-color-on-surface);
             font-size: 1.2rem;
             line-height: 2rem;
             &:focus{
                 outline: none;
             }
+            // &::placeholder{
+            //     color: var(--md-sys-color-on-surface-variant);
+            // }
         }
     }
 
@@ -33,12 +41,12 @@
         line-height: 2rem;
 
         & .recently-added{
-            color: var(--text-bold);
+            color: var(--md-sys-color-primary);
             font-weight: 600;
         }
 
         & .all{
-            color: var(--text-regular);
+            color: var(--md-sys-color-on-surface-variant);
         }
 
         & .separator-container{
@@ -50,7 +58,7 @@
 
             & .separator{
                 height: 70%;
-                border: 1px solid var(--text-regular);
+                border: 1px solid var(--md-sys-color-on-surface-variant);
             }
         }
     }
@@ -85,16 +93,16 @@
 
         &__name{
             font-weight: 600;
-            color: var(--text-bold);
+            color: var(--md-sys-color-on-surface);
         }
 
         &__position{
             font-weight: 500;
-            color: var(--text-regular);
+            color: var(--md-sys-color-on-surface-variant);
         }
 
         &__company{
-            color: var(--text-regular);
+            color: var(--md-sys-color-on-surface-variant);
         }
     }
 }

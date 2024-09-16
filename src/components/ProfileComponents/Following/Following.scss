@@ -8,7 +8,7 @@
 .profilepage-following__statusbar{
     font-size: 1.2rem;
     line-height: 2rem;
-    color: var(--text-regular);
+    color: var(--md-sys-color-on-surface-variant);
 }
 
 .profilepage-following__followings{
@@ -21,7 +21,7 @@
         align-items: center;
         justify-content: space-between;
         padding-bottom: 1.6rem;
-        border-bottom: 1px solid var(--separator-color);
+        border-bottom: 1px solid var(--md-sys-color-outline-variant);
 
         & .info{
             display: flex;
@@ -38,12 +38,12 @@
             }
 
             & .name{
-                color: var(--text-bold);
+                color: var(--md-sys-color-primary);
                 font-weight: 500;
             }
 
             & .position{
-                color: var(--text-regular);
+                color: var(--md-sys-color-on-surface-variant);
             }
         }
     }

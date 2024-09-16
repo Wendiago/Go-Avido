@@ -81,11 +81,11 @@ export const Event = ({ eventDetail }: { eventDetail: EventDetailProps }) => {
                 strokeLinejoin="round"
               />
             </svg>
-            <p>Interested</p>
+            Interested
           </Button>
         ) : (
           <Button className="event__info-button" color="cyan" size="medium">
-            <p>Interested</p>
+            Interested
           </Button>
         )}
       </div>

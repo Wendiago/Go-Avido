@@ -1,11 +1,9 @@
-.profilepage-header__container{
-    
-}
 .profilepage-header{
     position: relative;
     width: 100%;
     height: 20.4rem;
-    background: linear-gradient(to right, rgba(11, 170, 202, 0.3), rgba(11, 170, 202, 0.5));
+    //background: linear-gradient(to right, rgba(11, 170, 202, 0.3), rgba(11, 170, 202, 0.5));
+    background-color: var(--md-sys-color-tertiary);
 
     & .profilepage-header__grid{
         display: grid;
@@ -20,7 +18,7 @@
         grid-column: 2 / 4;
         & .profilepage-header__avatar{
             position: relative;
-            border: 4px solid var(--white);
+            border: 2px solid var(--md-sys-color-outline-variant);
             border-radius: 50%;
             height: 19.6rem;
             aspect-ratio: 1;
@@ -42,20 +40,20 @@
             gap: 0.8rem;
             font-size: 1.8rem;
             line-height: 3rem;
-            color: var(--text-bold);
+            color: var(--md-sys-color-on-tertiary);
             font-weight: 700;
         }
 
         &-position{
             font-size: 1.6rem;
             line-height: 2.6rem;
-            color: var(--text-bold);
+            color: var(--md-sys-color-on-tertiary);
         }
 
         &-place{
             font-size: 1.4rem;
             line-height: 2.2rem;
-            color: var(--text-bold);
+            color: var(--md-sys-color-on-tertiary);
             font-weight: 600;
         }
     }
@@ -68,18 +66,18 @@
         display: flex;
         align-items: center;
         padding: 1.2rem 5.2rem;
-        background-color: var(--white);
+        background-color:  var(--md-sys-color-tertiary-container);
         border-radius: 4px;
         & div.title{
             font-size: 1.6rem;
-            color: var(--text-bold);
+            color: var(--md-sys-color-on-background);
             font-weight: 600;
             line-height: 2.6rem;
         }
 
         & div{
             font-size: 1.4rem;
-            color: var(--text-medium);
+            color: var(--md-sys-color-on-tertiary-container);
             line-height: 2.2rem;
         }
         
@@ -92,7 +90,7 @@
             align-items: center;
             & .separator{
                 height: 50%;
-                border: 1px solid var(--text-regular);
+                border: 1px solid var(--md-sys-color-outline);
             }
             
         }
@@ -102,8 +100,8 @@
 .profilepage-controllers-background{
     width: 100%;
     height: 5.6rem;
-    background-color: var(--white);
-    border-bottom: 1px solid var(--separator-color);
+    background-color:  var(--md-sys-color-tertiary-container);
+    border-bottom: 1px solid var(--md-sys-color-outline-variant);
     .profilepage-controllers__container{
         display: grid;
         max-width: 133.6rem;
@@ -118,6 +116,8 @@
             gap: 1.6rem;
             grid-column: 4 / 13;
             margin-left: -0.8rem;
+
+            
         }
     }
 }
@@ -136,24 +136,24 @@
         max-width: 110.6rem;
         margin-top: 5.2rem;
         padding: 2.4rem;
-        background-color: var(--white);
+        background-color:  var(--md-sys-color-surface-container);
     }
 
     &__navlinks{
         display: flex;
         justify-content: space-between;
         height: 3.6rem;
-        border-bottom: 1px solid var(--separator-color);
+        border-bottom: 1px solid var(--md-sys-color-outline-variant);
 
         & .profilepage-navlink{
             font-size: 2rem;
             line-height: 2.8rem;
-            color: var(--text-bold);
+            color: var(--md-sys-color-on-surface);
             font-weight: 500;
             text-decoration: none;
         
             &.active{
-                border-bottom: 1px solid var(--cyan);
+                border-bottom: 1px solid var(--md-sys-color-primary);
             }
         }
         
@@ -168,7 +168,7 @@
         grid-template-columns: minmax(auto, 11.1rem) auto;
         grid-template-rows: repeat(3, auto);
         column-gap: 1.6rem;
-        background-color: var(--cyan-400);
+        background-color: var(--md-sys-color-tertiary);
 
         & .profilepage-header{
             display: contents; 
@@ -221,21 +221,21 @@
                 padding: 0 1.6rem 1.6rem 1.6rem;
                 & div.title{
                     font-size: 1.6rem;
-                    color: var(--text-bold);
+                    color: var(--md-sys-color-on-background);
                     font-weight: 600;
                     line-height: 2.6rem;
                 }
         
                 & div{
                     font-size: 1.4rem;
-                    color: var(--text-medium);
+                    color: var(--md-sys-color-on-surface-variant);
                     line-height: 2.2rem;
                 }
                 
                 & .separator-container{
                     & .separator{
                         height: 70%;
-                        border: 1px solid var(--separator-color);
+                        border: 1px solid var(--md-sys-color-outline-variant);
                     }
                     
                 }
@@ -281,18 +281,18 @@
             flex-direction: column;
             gap: 1.6rem;
             height: auto;
-            border-bottom: 1px solid var(--separator-color);
+            border-bottom: 1px solid var(--md-sys-color-outline-variant);
     
             & .profilepage-navlink{
                 height: 4rem;
                 font-size: 1.8rem;
                 line-height: 3.2rem;
-                color: var(--text-bold);
+                color: var(--md-sys-color-on-surface);
                 font-weight: 500;
                 text-decoration: none;
             
                 &.active{
-                    border-bottom: 2px solid var(--black);
+                    border-bottom: 2px solid var(--md-sys-color-primary);
                 }
             }
             

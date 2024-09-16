@@ -67,17 +67,17 @@ export const ProfilePage = () => {
           <div className="profilepage-controllers__container">
             <div className="profilepage-controllers">
               <div className="profilepage-controllers__connect">
-                <Button color="cyan-filled" size="small">
+                <Button color="teal-filled" size="small">
                   Connect
                 </Button>
               </div>
               <div className="profilepage-controllers__email">
-                <Button color="cyan" size="small">
+                <Button color="teal" size="small">
                   Send an email
                 </Button>
               </div>
               <div className="profilepage-controllers__follow">
-                <Button color="cyan" size="small">
+                <Button color="teal" size="small">
                   Follow / Unfollow
                 </Button>
               </div>

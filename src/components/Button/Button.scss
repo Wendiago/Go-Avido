@@ -6,32 +6,38 @@
     cursor: pointer;    
     &--black {
         background-color: transparent;
-        color: var(--black);
-        border: 1px solid var(--black);
+        color: var(--md-sys-color-on-surface);
+        border: 1px solid var(--md-sys-color-outline-variant);
     }
   
     &--orange {
         background-color: transparent;
-        color: var(--orange);
-        border: 1px solid var(--orange);
+        color: var(--md-sys-color-error);
+        border: 1px solid var(--md-sys-color-error);
     }
   
     &--cyan {
         background-color: transparent;
-        color: var(--cyan);
-        border: 1px solid var(--cyan);
+        color: var(--md-sys-color-primary);
+        border: 1px solid var(--md-sys-color-primary);
     }
 
     &--cyan-filled{
-        background-color: var(--cyan);
-        color: var(--white);
+        background-color: var(--md-sys-color-primary);
+        color: var(--md-sys-color-on-primary);
         border: none;
     }
 
     &--teal-filled{
-        background-color: var(--teal);
-        color: var(--white);
+        background-color: var(--md-sys-color-tertiary);
+        color: var(--md-sys-color-on-tertiary);
         border: none;
+    }
+
+    &--teal{
+        background-color: transparent;
+        color: var(--md-sys-color-on-tertiary-container);
+        border: 1px solid var(--md-sys-color-on-tertiary-container);
     }
   
     &--small {

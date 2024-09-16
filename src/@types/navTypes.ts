@@ -1,13 +1,13 @@
 export enum NavigationLink {
   Home = "/",
-  Network = "/network",
+  Login = "/login",
   Events = "/events",
   Profile = "/profile",
 }
 
 export enum Navigation {
   Home = "Home",
-  Network = "Network",
+  Login = "Login",
   Events = "Events",
   Profile = "Profile",
 }

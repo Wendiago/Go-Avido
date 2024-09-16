@@ -3,7 +3,7 @@ import { SVGProps } from "react";
 export const UserIcon = ({
   height = "16px",
   width = "16px",
-  color = "var(--text-medium)",
+  color = "var(--md-sys-color-on-surface-variant)",
   ...props
 }: SVGProps<SVGSVGElement>) => (
   <svg

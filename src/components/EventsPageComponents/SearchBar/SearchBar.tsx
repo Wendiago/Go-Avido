@@ -12,7 +12,11 @@ export const SearchBar = () => {
       <div className="separator"></div>
       <div className="eventspage__searchbar-filters">
         <div className="location-filter">
-          <LocationIcon color="var(--cyan)" width="28px" height="28px" />
+          <LocationIcon
+            color="var(--md-sys-color-primary)"
+            width="28px"
+            height="28px"
+          />
           <p>New Delhi</p>
         </div>
         <div className="event-filter">

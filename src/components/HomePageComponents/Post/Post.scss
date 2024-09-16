@@ -6,7 +6,7 @@
     gap: 2.4rem;
     // background-color: rgba(255, 255, 255, 0.2);
     // backdrop-filter: blur(10px); 
-    background-color: var(--white);
+    background-color:  var(--md-sys-color-surface-container);
 
     &-header{
         height: 6.8rem;
@@ -20,20 +20,20 @@
 
         &-name{
             font-size: 1.6rem;
-            color: var(--text-bold);
+            color: var(--md-sys-color-on-surface);
             line-height: 2.6rem;
             font-weight: 600;
         }
 
         &-position{
             font-size: 1.4rem;
-            color: var(--text-regular);
+            color: var(--md-sys-color-on-surface-variant);
             line-height: 2.2rem;
         }
 
         &-date{
             font-size: 1.2rem;
-            color: var(--text-regular);
+            color: var(--md-sys-color-on-surface-variant);
             line-height: 2rem;
         }
     }
@@ -47,7 +47,7 @@
             max-height: 10rem;
             font-size: 1.6rem;
             line-height: 2.6rem;
-            color: var(--text-regular);
+            color: var(--md-sys-color-on-surface-variant);
             overflow: hidden;
             text-overflow: ellipsis;
 
@@ -66,7 +66,7 @@
             margin-top: -2rem;
             font-size: 1.6rem;
             line-height: 2.6rem;
-            color: var(--text-bold);
+            color: var(--md-sys-color-primary);
             font-weight: 600;
             &:hover{
                 opacity: 0.6;
@@ -78,7 +78,7 @@
             margin-top: -2rem;
             font-size: 1.6rem;
             line-height: 2.6rem;
-            color: var(--text-bold);
+            color: var(--md-sys-color-on-surface);
             font-weight: 600;
             &:hover{
                 opacity: 0.6;
@@ -110,16 +110,16 @@
                     &:hover{
                         transform: scale(1.25);
                         path{
-                            fill: #20C997;
+                            stroke: var(--md-sys-color-primary);
                         }
                     }
                     path{
-                        stroke: #1C836D;
+                        stroke: var(--md-sys-color-primary);
                     }
                 }
 
                 &.liked path{
-                    fill: #20C997;
+                    fill: var(--md-sys-color-primary);
                 }
             }
             
@@ -128,19 +128,19 @@
                 padding: 0.4rem;
                 font-size: 1.2rem;
                 line-height: 2rem;
-                color: var(--text-medium);
+                color: var(--md-sys-color-on-surface);
             }
 
         }
 
         .post-actions-bookmark{
             &.bookmarked path{
-                fill: #D56A11;
+                fill: var(--md-sys-color-error);
             }
 
             .bookmark-icon{
                 path{
-                    stroke: #D56A11;
+                    stroke: var(--md-sys-color-error);
                 }
             }
         }

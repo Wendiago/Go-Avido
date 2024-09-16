@@ -1,0 +1,183 @@
+.loginpage{
+    display: flex;
+    flex-direction: column;
+    &__navbar{
+        height: 8.4rem;
+        display: flex;
+        justify-content: space-between;
+        padding: 16px 52px;
+        background-color:  var(--md-sys-color-surface-container);
+
+        & img{
+            height: 5rem;
+            width: auto;
+            cursor: pointer;
+        }
+
+        & form{
+            display: flex;
+            gap: 3.2rem;
+
+            & .loginInput-password-container{
+                display: flex;
+                position: relative;
+                align-items: center;
+                justify-content: center;
+                width: 20rem;
+                height: 100%;
+                border-bottom: 1px solid var(--md-sys-color-outline);
+                color: var(--md-sys-color-on-surface);
+
+                & .login-toogle{
+                    position: absolute;
+                    right: 0;
+                    cursor: pointer;
+                    padding: 0 0.4rem;
+                    & path{
+                        fill: var(--md-sys-color-on-surface);
+                    }
+                }
+            }
+
+            & input{
+                border: none;
+                font-size: 1.6rem;
+                line-height: 2.6rem;
+                outline: none;
+                height: 100%;
+                width: 20rem;
+                color: var(--md-sys-color-on-surface);
+                background-color: var(--md-sys-color-surface-container);
+                &.loginInput-username{
+                    border-bottom: 1px solid var(--md-sys-color-outline);
+                }
+    
+                &::placeholder{
+                    color: var(--skillbox-color);
+                }
+            }
+            
+            & .login-button{
+                padding: 1rem 2.6rem;
+                font-size: 1.8rem;
+                line-height: 3.2rem;
+            }
+        }
+    }
+
+    &__content-background{
+        height: 62.6rem;
+        background-image: url(../../assets/login_background.png);
+        & .loginpage__content{
+            height: 100%;
+            width: 100%;
+            background-color: rgba($color: #121212, $alpha: 0.8);
+            padding: 5.2rem 10rem;
+            display: flex;
+            align-items: center;
+            gap: 12rem;
+            & img{
+                height: 42.5rem;
+                width: 50.4rem;
+            }
+
+            & .loginpage__content-signup-container{
+                flex-grow: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                & form{
+                    background-color:  var(--white);
+                    padding: 3.2rem;
+                    width: 61.6rem;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 3.2rem;
+
+                    & .signup-title{
+                        font-size: 2.8rem;
+                        line-height: 3.4rem;
+                        font-weight: 500;
+                    }
+
+                    & .signupInput-password-container{
+                        height: 100%;
+                        width: 100%;
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-bottom: 1px solid var(--skillbox-color);
+
+                        & .signupInput-password{
+                            width: 100%;
+                        }
+
+                        & .signup-toogle{
+                            position: absolute;
+                            right: 0;
+                            padding: 0 0.4rem;
+                            cursor: pointer;
+                        }
+                    }
+
+                    & input{
+                        outline: none;
+                        border: none;
+                        font-size: 1.6rem;
+                        line-height: 2.6rem;
+                        padding: 1.3rem 0;
+                        &:not(.signupInput-password){
+                            border-bottom: 1px solid var(--skillbox-color);
+                        }
+                        
+                        &::placeholder{
+                            color: var(--skillbox-color);
+                        }
+                    }
+
+                    & .signup-termAgree{
+                        display: flex;
+                        align-items: center;
+                        gap: 1.2rem;
+                        font-size: 1.6rem;
+                        line-height: 2.6rem;
+                        color: var(--text-medium);
+
+                        & input{
+                            width: 1.8rem;
+                            height: 1.8rem;
+                        }
+                        & span{
+                            color: var(--cyan);
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+
+    &__footer{
+        height: 11.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color:  var(--md-sys-color-surface-container);
+        padding: 3.2rem 5.2rem;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+
+        &-trademark{
+            color: var(--md-sys-color-on-surface);
+        }
+        &-footerlinks, &-policy{
+            display: flex;
+            gap: 3.2rem;
+            & p{
+                color: var(--md-sys-color-on-surface);
+            }
+        }
+    }
+}

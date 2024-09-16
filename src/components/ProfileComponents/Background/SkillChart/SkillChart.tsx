@@ -13,8 +13,8 @@ export const SkillChart = ({
   skillPercentage,
   radius = 40,
   strokeWidth = 5,
-  circleColor = "var(--text-regular)",
-  progressBarColor = "var(--text-bold)",
+  circleColor = "var(--md-sys-color-outline-variant)",
+  progressBarColor = "var(--md-sys-color-primary)",
 }: SkillChartProp) => {
   const circumference: number = radius * 2 * Math.PI;
   const strokeDashoffset: number =

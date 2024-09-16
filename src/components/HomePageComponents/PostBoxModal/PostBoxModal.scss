@@ -6,7 +6,7 @@
     padding: 3.2rem;
     width: 65.2rem;
     min-height: 50rem;
-    background-color: var(--white);
+    background-color:  var(--md-sys-color-surface-container);
 }
 
 .postboxmodal__header{
@@ -34,14 +34,14 @@
         &-name{
             font-size: 1.6rem;
             line-height: 2.6rem;
-            color: var(--text-bold);
+            color: var(--md-sys-color-on-surface);
             font-weight: 600;
         }
 
         &-visibility{
             font-size: 1.4rem;
             line-height: 2.2rem;
-            color: var(--text-medium);
+            color: var(--md-sys-color-on-surface-variant);
         }
     }
 
@@ -51,7 +51,7 @@
             height: 4rem;
         }
         & path{
-            fill: var(--text-bold)
+            fill: var(--md-sys-color-on-surface)
         }
 
         &:hover{
@@ -63,14 +63,15 @@
     &-des{
         font-size: 1.6rem;
         line-height: 2.6rem;
-        color: var(--text-bold);
+        color: var(--md-sys-color-on-surface);
         border: none;
         resize: none;
         flex-grow: 1;
         max-height: 31.4rem;
+        background-color: var(--md-sys-color-surface-container);
 
         &::placeholder{
-            color: var(--text-bold); 
+            color: var(--md-sys-color-on-surface); 
         }
 
         &:focus {
@@ -89,6 +90,16 @@
         width: 2.8rem;
         height: 2.8rem;
 
+        &:not(.postboxmodal__functions-emoji){
+            & path{
+                fill: var(--md-sys-color-outline-variant);
+            }
+        }
+
+        &.postboxmodal__functions-emoji path{
+            stroke: var(--md-sys-color-outline-variant);
+        }
+        
         &:hover{
             cursor: pointer;
             opacity: 0.7;
@@ -97,7 +108,7 @@
 }
 
 .postboxmodal__separator{
-    border: 1px solid var(--separator-color);
+    border: 1px solid var(--md-sys-color-outline-variant);
 }
 
 .postboxmodal__footer{
@@ -117,9 +128,10 @@
 
             font-size: 1.6rem;
             line-height: 3.2rem;
-            color: var(--text-bold);
+            color: var(--md-sys-color-on-surface);
 
             & .visibility{
+                color: var(--md-sys-color-primary);
                 font-weight: 600;
             }
 
@@ -127,7 +139,7 @@
                 width: 2rem;
                 height: 2rem;
                 & path{
-                    stroke: var(--text-bold);
+                    stroke: var(--md-sys-color-primary);
                 }
                 &:hover{
                     cursor: pointer;
@@ -139,7 +151,7 @@
         &-des{
             font-size: 1.4rem;
             line-height: 2.2rem;
-            color: var(--text-medium);
+            color: var(--md-sys-color-on-surface-variant);
         }
     }
 
@@ -159,7 +171,7 @@
                 }
             }
             & path{
-                fill: var(--text-bold);
+                fill: var(--md-sys-color-on-surface);
             }
         }
 
@@ -167,8 +179,8 @@
             padding: 1.9rem 4.4rem;
             line-height: 3.4rem;
             font-size: 2.2rem;
-            color: var(--white);
-            background-color: var(--cyan);
+            color: var(--md-sys-color-on-primary);
+            background-color: var(--md-sys-color-primary);
             border-radius: 39px;
 
             &:hover{
@@ -196,13 +208,14 @@
     &-option{
         font-size: 1.6rem;
         line-height: 3.2rem;
-        color: var(--white);
+        color: var(--md-sys-color-on-primary-container);
         font-weight: 600;
-        background-color: var(--text-bold);    
+        background-color: var(--md-sys-color-primary-container);    
         padding: 0 1rem;
 
         &:hover {
-            background-color: var(--text-medium);
+            background-color: var(--md-sys-color-secondary);
+            color: var(--md-sys-color-on-secondary);
             cursor: pointer;
         }
 

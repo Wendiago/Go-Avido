@@ -15,3 +15,7 @@ export { default as Location } from "./location.png";
 export { default as Video } from "./youtube.png";
 export { default as Calendar } from "./calendar.png";
 export { default as PlaceholderImage } from "./PlaceholderImage.png";
+export { default as LoginLogo } from "./login_logo.png";
+export { default as LoginBackground } from "./login_background.png";
+export { default as LogoLight } from "./logo_light.png";
+export { default as LogoDark } from "./logo_dark.png";

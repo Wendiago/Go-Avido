@@ -3,7 +3,7 @@ import { SVGProps } from "react";
 export const SearchIcon = ({
   height = "20px",
   width = "20px",
-  color = "var(--text-bold)",
+  color = "var(--md-sys-color-on-surface)",
   ...props
 }: SVGProps<SVGSVGElement>) => (
   <svg

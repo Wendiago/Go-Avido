@@ -4,18 +4,16 @@
     gap: 1.6rem;
     box-shadow: 0 18px 24px rgba(0, 0, 0, 0.08);
     width: 100%;
-    // background-color: rgba(255, 255, 255, 0.2);
-    // backdrop-filter: blur(10px); 
-    background-color: var(--white);
+    background-color:  var(--md-sys-color-surface-container);
 
     .connection-recommendbox__header{
         padding: 0.8rem 2.4rem;
-        color: var(--text-bold);
+        color: var(--md-sys-color-on-background);
         font-size: 1.8rem;
         line-height: 3.2rem;
         letter-spacing: -0.4px;
         font-weight: 500;
-        border-bottom: 1px solid var(--separator-color);
+        border-bottom: 1px solid var(--md-sys-color-outline-variant);
     }
 
     .connection-recommendbox__infobox-container{
@@ -29,7 +27,7 @@
             justify-content: space-between;
             align-items: center;
             padding-bottom: 1.6rem;
-            border-bottom: 1px solid var(--separator-color);
+            border-bottom: 1px solid var(--md-sys-color-outline-variant);
 
             &:last-child{
                 border-bottom: none;
@@ -48,30 +46,30 @@
             }
             &-name{
                 font-size: 1.2rem;
-                color: var(--text-bold);
+                color: var(--md-sys-color-on-surface);
                 line-height: 2rem;
                 font-weight: 700;
             }
             &-position{
                 font-size: 1.2rem;
-                color: var(--text-regular);
+                color: var(--md-sys-color-on-surface-variant);
                 line-height: 2rem;
                 font-weight: 600;
             }
             &-time{
                 font-size: 1.2rem;
-                color: var(--text-regular);
+                color: var(--md-sys-color-on-surface-variant);
                 line-height: 2rem;
                 font-weight: 400;
             }
 
             &-button{
-                color: var(--cyan);
+                color: var(--md-sys-color-primary);
                 font-size: 1.4rem;
                 line-height: 2.4rem;
                 font-weight: 500;
 
-                border: 1px solid var(--cyan);
+                border: 1px solid var(--md-sys-color-primary);
                 border-radius: 4px;
                 padding: 0.4rem 1rem;
 
@@ -88,7 +86,7 @@
         justify-content: center;
         align-items: center;
         padding: 1.2rem 0;
-        border-top: 1px solid var(--separator-color);
+        border-top: 1px solid var(--md-sys-color-outline-variant);
         margin-top: -1.6rem;
         &-group{
             display: flex;
@@ -99,13 +97,13 @@
                 opacity: 0.7;
             }
             & p{
-                color: var(--cyan);
+                color: var(--md-sys-color-primary);
                 font-size: 1.4rem;
                 line-height: 2.4rem;
             }
 
             & path{
-                stroke: var(--cyan);
+                stroke: var(--md-sys-color-primary);
             }
         }
     }

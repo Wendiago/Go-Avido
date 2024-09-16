@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
-    background-color: var(--white);
+    background-color: var(--md-sys-color-surface-container);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 
     &-searchbox{
@@ -13,21 +13,27 @@
         gap: 0.8rem;
         align-items: center;
 
+        & path{
+            fill: var(--md-sys-color-on-surface);
+        }
+
         & input{
             flex-grow: 1;
             border: none;
             font-size: 1.4rem;
             line-height: 2.4rem;
-            color: var(--text-regular);
+            color: var(--md-sys-color-on-surface);
+            background-color: var(--md-sys-color-surface-container);
 
             &:focus{
                 outline: none;
+                color: var(--md-sys-color-on-surface);
             }
         }
     }
 
     & .separator{
-        border-bottom: 1px solid var(--separator-color);
+        border-bottom: 1px solid var(--md-sys-color-outline-variant);
         width: 100%;
     }
 
@@ -49,7 +55,7 @@
             & p{
                 font-size: 1.4rem;
                 line-height: 2.4rem;
-                color: var(--text-medium);
+                color: var(--md-sys-color-on-surface);
             }
 
             &:hover{

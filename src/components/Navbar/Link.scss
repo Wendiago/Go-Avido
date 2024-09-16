@@ -1,15 +1,15 @@
 .navlink{
-    color: var(--text-bold);
+    color: var(--md-sys-color-on-surface);
     font-size: 1.6rem;
     padding: 0.4rem 0;
     text-decoration: none;
 }
 
 .navlink:hover{
-    color: var(--text-regular);
+    color: var(--md-sys-color-on-surface-variant);
     cursor: pointer;
 }
 
 .navlink.active{
-    border-bottom: solid 0.2rem var(--cyan);
+    border-bottom: solid 0.2rem var(--md-sys-color-primary);
 }

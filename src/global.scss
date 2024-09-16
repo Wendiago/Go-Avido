@@ -30,25 +30,33 @@ $desktop: 1335px;
     --post-text-color: #3E3E59;
     --glass-white: rgba(255, 255, 255, 0.4);
     --skillbox-color: #A7A7A7;
+    --container-darkmode-color: #111E21;
     --font-family: "Figtree", "Inter", sans-serif;
-}
 
+    /* Theme-dependent variables */
+    --container-color: var(--white);
+    --text-color: var(--black);
+    --accent-color: var(--cyan);
+    --background-color: var(--white)
+}
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: var(--font-family);
+    color: var(--black);
 }
 
 html{
     min-height: 100vh;
     font-size: 10px;
-    background-image: url('https://th.bing.com/th/id/R.21228762a3d9e9ed62dd633b465a7ee6?rik=Mds6%2b9gvLyTTLA&pid=ImgRaw&r=0');
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-attachment: fixed; 
+    // background-image: url('https://th.bing.com/th/id/R.21228762a3d9e9ed62dd633b465a7ee6?rik=Mds6%2b9gvLyTTLA&pid=ImgRaw&r=0');
+    // background-size: cover; 
+    // background-position: center; 
+    // background-repeat: no-repeat; 
+    // background-attachment: fixed; 
+    background-color: var(--md-sys-color-background);
 }
 
 main{
@@ -80,6 +88,11 @@ main{
     overflow: hidden;
 }
 
+/* Remove default eye from password input in MS */
+input::-ms-reveal,
+input::-ms-clear {
+    display: none;
+}
 
 
 

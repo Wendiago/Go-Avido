@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: var(--text-regular);
+    color: var(--md-sys-color-on-surface);
     font-size: 1.4rem;
     line-height: 2.2rem;
     & svg{
@@ -14,6 +14,10 @@
     }
 
     & .skillchart__text{
-        fill: var(--text-regular);
+        fill: var(--md-sys-color-on-surface-variant);
+    }
+
+    & .skillchart__label{
+        color: var(--md-sys-color-on-surface);
     }
 }

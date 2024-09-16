@@ -2,7 +2,7 @@ import React from "react";
 export const ClockIcon = ({
   height = "16px",
   width = "16px",
-  color = "var(--text-medium)",
+  color = "var(--md-sys-color-on-surface-variant)",
   ...props
 }: React.SVGProps<SVGSVGElement>) => (
   <svg
