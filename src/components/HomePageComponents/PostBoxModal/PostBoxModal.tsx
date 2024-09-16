@@ -2,8 +2,6 @@ import "./PostBoxModal.scss";
 import { Avatar } from "../../../assets";
 import { Visibility, visibilityDescriptions } from "../../../@types/navTypes";
 import { useEffect, useRef, useState } from "react";
-import { faSmile } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 type PostBoxModalProp = {
   isOpen: boolean;
